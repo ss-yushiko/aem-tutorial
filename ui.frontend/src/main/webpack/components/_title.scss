@@ -1,3 +1,19 @@
-.cmp-title {}
-.cmp-title__text {}
-.cmp-title__link {}
+.title{
+  .ui-title{
+    &-basic{
+      .cmp-title__text{
+        font-weight: normal;
+        padding: .5em .8em;
+        border-bottom: #1399ae 2px solid;
+      }
+    }
+    &-smallcaps{
+      .cmp-title__text{
+        font-weight: bold;
+        font-variant: small-caps;
+        border-bottom: #FFF 2px solid;
+        color: #1399ae;
+      }
+    }
+  }
+}
