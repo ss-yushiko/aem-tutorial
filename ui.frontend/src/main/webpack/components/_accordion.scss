@@ -7,15 +7,20 @@
         .cmp-accordion__title {
           color: #758492;
         }
-      }
-      .cmp-accordion__icon {
-        &::after {
-          background-color: #fff;
+        .cmp-accordion__icon {
+          &::after {
+            background-color: #758492;
+          }
         }
       }
     }
     .cmp-accordion__title {
       color: #fff;
+    }
+    .cmp-accordion__icon {
+      &::after {
+        background-color: #fff;
+      }
     }
     .cmp-accordion__panel {
       background-color: #000;
@@ -32,15 +37,20 @@
         .cmp-accordion__title {
           color: #758492;
         }
-      }
-      .cmp-accordion__icon {
-        &::after {
-          background-color: #000;
+        .cmp-accordion__icon {
+          &::after {
+            background-color: #758492;
+          }
         }
       }
     }
     .cmp-accordion__title {
       color: #000;
+    }
+    .cmp-accordion__icon {
+      &::after {
+        background-color: #000;
+      }
     }
     .cmp-accordion__panel {
       background-color: #fff;
@@ -63,14 +73,14 @@
           }
         }
       }
-      .cmp-accordion__icon {
-        &::after {
-          background-color: #000;
-        }
-      }
     }
     .cmp-accordion__title {
       color: #000;
+    }
+    .cmp-accordion__icon {
+      &::after {
+        background-color: #000;
+      }
     }
     .cmp-accordion__panel {
       background-color: #FCF16E;
