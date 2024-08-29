@@ -1,5 +1,32 @@
-.cmp-title {
-  color: red;
+.title {
+
+    .cmp-title {
+    }
+
+    .cmp-title__text {
+        font-size: 2rem;
+        line-height: 1.5em;
+        font-weight: bold;
+    }
+
+    &.ui-title {
+
+        &--color-red {
+            .cmp-title__text {
+                color: red;
+            }
+        }
+        &--color-blue {
+            .cmp-title__text {
+                color: blue;
+            }
+        }
+        &--color-yellow {
+            .cmp-title__text {
+                color: yellow;
+            }
+        }
+        
+    }
+
 }
-.cmp-title__text {}
-.cmp-title__link {}
