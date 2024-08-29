@@ -1,5 +1,21 @@
-.cmp-list {}
-.cmp-list__item {}
-.cmp-list__item-link {}
-.cmp-list__item-title {}
-.cmp-list__item-date {}
+.list {
+  &.ui-list-basic {
+    font-size: 16px;
+  }
+  &.ui-list-small {
+    font-size: 12px;
+  }
+  &.ui-list-large {
+    font-size: 24px;
+  }
+}
+.cmp-list {
+}
+.cmp-list__item {
+}
+.cmp-list__item-link {
+}
+.cmp-list__item-title {
+}
+.cmp-list__item-date {
+}

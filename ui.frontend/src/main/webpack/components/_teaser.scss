@@ -1,9 +1,73 @@
-.cmp-teaser {}
-.cmp-teaser__image {}
-.cmp-teaser__content {}
-.cmp-teaser__pretitle {}
-.cmp-teaser__title {}
-.cmp-teaser__title-link {}
-.cmp-teaser__description {}
-.cmp-teaser__action-container {}
-.cmp-teaser__action-link {}
+// <div class="teaser">
+//   <div id="teaser-8a5ff3ac98" class="cmp-teaser" data-cmp-data-layer="{&quot;teaser-8a5ff3ac98&quot;:{&quot;@type&quot;:&quot;core-components-examples/components/teaser&quot;,&quot;dc:title&quot;:&quot;Teaser Title&quot;,&quot;dc:description&quot;:&quot;<p>Teaser Description</p>&quot;}}">
+//     <div class="cmp-teaser__content">
+//       <p class="cmp-teaser__pretitle">Pretitle</p>
+//       <h2 class="cmp-teaser__title"> Teaser Title </h2>
+//       <div class="cmp-teaser__description">
+//         <p>Teaser Description</p>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+
+.teaser {
+  &.test {
+    position: relative;
+    background: #f7f7f7;
+    width: 300px;
+    height: 150px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+
+    .cmp-teaser__image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+
+      & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .cmp-teaser__content {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 10px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.9);
+      box-sizing: border-box;
+      border-radius: 0 0 4px 4px;
+      z-index: 1;
+
+      .cmp-teaser__pretitle {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 5px;
+      }
+
+      .cmp-teaser__title {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      .cmp-teaser__description {
+        font-size: 0.85rem;
+        color: #666;
+      }
+
+      .cmp-teaser__title-link {}
+      .cmp-teaser__action-container {}
+      .cmp-teaser__action-link {}
+    }
+  }
+}
