@@ -1,6 +1,6 @@
-const buttons = document.querySelectorAll('.cpm-button');
+var buttons = document.querySelectorAll('.cpm-button');
 
-buttons.forEach(button => {
+buttons.forEach(function(button) {
     button.addEventListener('click', function() {
         button.classList.toggle('clicked');
     });

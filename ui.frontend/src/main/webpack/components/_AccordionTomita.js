@@ -1,14 +1,13 @@
+function toggleAccordion() {
+  var accordionHeads = document.querySelectorAll('.cmp-accordion__header');
+  var accordionPanels = document.querySelectorAll('.cmp-accordion__panel');
 
-const toggleAccordion = () => {
-  const accordionHeads = document.querySelectorAll('.cmp-accordion__header');
-  const accordionPanels = document.querySelectorAll('.cmp-accordion__panel');
+  accordionHeads.forEach(function (accordionHead, index) {
+    accordionHead.addEventListener('click', function () {
 
-  accordionHeads.forEach((accordionHead, index) => {
-    accordionHead.addEventListener('click', () => {
+      var isActive = accordionHead.classList.contains('is-open');
 
-      const isActive = accordionHead.classList.contains('is-open');
-
-      accordionHeads.forEach((otherHead, otherIndex) => {
+      accordionHeads.forEach(function (otherHead, otherIndex) {
         otherHead.classList.remove('is-open');
         accordionPanels[otherIndex].classList.remove('is-open');
       });
@@ -19,8 +18,8 @@ const toggleAccordion = () => {
       }
     });
   });
-};
+}
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
   toggleAccordion();
 });
